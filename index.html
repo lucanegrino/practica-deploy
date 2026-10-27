@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Seven Ball — La Pelota que Rebota Por Siempre</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        neon: {
+                            cyan: '#00f2fe',
+                            pink: '#ff007f',
+                            purple: '#7928ca',
+                            green: '#00ff66',
+                            yellow: '#ffcc00'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .glow-text { text-shadow: 0 0 20px rgba(0, 242, 254, 0.6); }
+        .glow-box { box-shadow: 0 0 30px rgba(121, 40, 202, 0.3); }
+        .glow-btn { box-shadow: 0 0 25px rgba(255, 0, 127, 0.5); }
+    </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen selection:bg-neon-pink selection:text-white overflow-x-hidden">
+
+    <!-- Header / Nav -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-neon-pink to-neon-cyan flex items-center justify-center font-black text-xl italic animate-bounce">
+                    67
+                </div>
+                <span class="text-xl font-black tracking-wider bg-gradient-to-r from-neon-cyan to-neon-pink bg-clip-text text-transparent">SIX SEVEN BALL</span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
+                <a href="#simulador" class="hover:text-neon-cyan transition">Simulador</a>
+                <a href="#juego" class="hover:text-neon-green transition">🎮 Juego Mario 67</a>
+                <a href="#caracteristicas" class="hover:text-neon-cyan transition">Tecnología 6-7</a>
+                <a href="#testimonios" class="hover:text-neon-cyan transition">Opiniones</a>
+                <a href="#faq" class="hover:text-neon-cyan transition">FAQ</a>
+            </nav>
+            <a href="#comprar" class="bg-gradient-to-r from-neon-pink to-neon-purple px-6 py-2.5 rounded-full font-bold text-sm glow-btn hover:scale-105 transition transform">
+                Comprar $67.00
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neon-purple/20 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center space-x-2 bg-slate-900 border border-slate-800 px-4 py-2 rounded-full text-xs font-semibold text-neon-cyan">
+                    <span class="w-2 h-2 rounded-full bg-neon-cyan animate-ping"></span>
+                    <span>LA LEYENDA DEL MEME HECHA REALIDAD</span>
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black tracking-tight leading-none">
+                    La Pelota que <span class="bg-gradient-to-r from-neon-cyan via-neon-pink to-neon-purple bg-clip-text text-transparent glow-text">NUNCA</span> Deja de Rebotar.
+                </h1>
+                <p class="text-slate-400 text-lg max-w-xl mx-auto lg:mx-0 font-light">
+                    Inspirada en el meme definitivo <strong class="text-white">Six Seven</strong>. Infundida con energía cuántica de internet, esta pelota desafía las leyes de la física para rebotar por toda la eternidad.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#juego" class="w-full sm:w-auto text-center bg-gradient-to-r from-neon-green to-neon-cyan px-8 py-4 rounded-full font-bold text-slate-950 hover:opacity-90 transition transform hover:-translate-y-0.5 shadow-lg shadow-neon-green/20">
+                        🎮 Jugar Mario 6-7
+                    </a>
+                    <a href="#simulador" class="w-full sm:w-auto text-center bg-slate-900 border border-slate-700 hover:border-slate-500 px-8 py-4 rounded-full font-bold text-white transition">
+                        Probar Simulador
+                    </a>
+                </div>
+                <div class="pt-6 flex items-center justify-center lg:justify-start space-x-6 text-xs text-slate-500">
+                    <div>🔥 +67,000 unidades vendidas</div>
+                    <div>⚡ Garantía de rebote eterno</div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="w-full max-w-md aspect-square rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 glow-box p-8 flex flex-col items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neon-purple/10 via-transparent to-transparent"></div>
+                    <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-neon-pink via-purple-500 to-neon-cyan flex items-center justify-center font-black text-4xl italic shadow-[0_0_40px_rgba(255,0,127,0.6)] animate-bounce duration-75 relative z-10 select-none">
+                        67
+                    </div>
+                    <div class="w-24 h-4 bg-slate-800 rounded-full blur-md mt-16 animate-pulse"></div>
+                    <p class="text-slate-400 text-sm mt-8 text-center font-mono">Modo de prueba: Rebote perpetuo activo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Canvas Simulator Section -->
+    <section id="simulador" class="py-20 px-6 bg-slate-900/40 border-y border-slate-900">
+        <div class="max-w-5xl mx-auto space-y-8">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">Simulador Oficial Six Seven</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Experimenta la física cuántica del meme directamente en tu navegador.</p>
+            </div>
+
+            <div class="bg-slate-950 border border-slate-800 rounded-3xl p-4 glow-box relative overflow-hidden">
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4 px-4 py-2 bg-slate-900/60 rounded-xl border border-slate-800/80 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-slate-400">Rebotes totales:</span>
+                        <span id="bounce-counter" class="text-neon-cyan font-black text-lg font-mono">0</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <button onclick="resetSimulation()" class="bg-slate-800 hover:bg-slate-700 text-xs px-3 py-1.5 rounded-lg font-semibold transition">Reiniciar</button>
+                        <button onclick="toggleAudio()" id="audio-btn" class="bg-slate-800 hover:bg-slate-700 text-xs px-3 py-1.5 rounded-lg font-semibold transition">🔊 Sonido: OFF</button>
+                    </div>
+                </div>
+
+                <div class="relative w-full aspect-[16/9] bg-slate-950 rounded-2xl overflow-hidden border border-slate-900 flex items-center justify-center">
+                    <canvas id="ballCanvas" class="w-full h-full block cursor-pointer"></canvas>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 px-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs text-slate-400">
+                            <span>Gravedad</span>
+                            <span id="val-gravity">0.4</span>
+                        </div>
+                        <input type="range" id="range-gravity" min="0.1" max="1.5" step="0.1" value="0.4" class="w-full accent-neon-cyan cursor-pointer">
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs text-slate-400">
+                            <span>Velocidad de rebote</span>
+                            <span id="val-bounce">0.95</span>
+                        </div>
+                        <input type="range" id="range-bounce" min="0.7" max="1.0" step="0.01" value="0.95" class="w-full accent-neon-pink cursor-pointer">
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs text-slate-400">
+                            <span>Tamaño de la Pelota</span>
+                            <span id="val-size">45</span>
+                        </div>
+                        <input type="range" id="range-size" min="20" max="80" step="5" value="45" class="w-full accent-purple-500 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section: Advanced Platformer Mario-style -->
+    <section id="juego" class="py-20 px-6 bg-slate-950 border-b border-slate-900">
+        <div class="max-w-6xl mx-auto space-y-8">
+            <div class="text-center space-y-4">
+                <span class="bg-neon-green/10 text-neon-green border border-neon-green/30 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Aventura Lineal estilo Super Mario Bros</span>
+                <h2 class="text-3xl lg:text-5xl font-black tracking-tight text-white">Six Seven World Run 🚩</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Avanza a través del mapa lineal de 3600px, esquiva las bombas del <strong>Bombardiro Crocodrilo 🐊</strong>, los batazos del <strong>Tung Tung Sahur 🗿</strong> y los proyectiles 67 del <strong>Niño 67 👶</strong>. ¡Colecta estrellas ⭐ para comprar skins e interactúa con el asta de bandera al final!</p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-4 glow-box relative overflow-hidden">
+                <!-- Game HUD -->
+                <div class="flex flex-wrap items-center justify-between gap-4 mb-4 px-4 py-2 bg-slate-950/90 rounded-xl border border-slate-800 text-sm">
+                    <div class="flex items-center space-x-6">
+                        <div>Estrellas acumuladas: <span id="game-stars" class="text-yellow-400 font-black text-lg">0 ⭐</span></div>
+                        <div>Vidas: <span id="game-lives" class="text-neon-pink font-black text-lg">❤️ 3</span></div>
+                        <div>Skin actual: <span id="game-active-skin" class="text-neon-cyan font-bold">Clásica Neon</span></div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="openShop()" class="bg-neon-yellow text-slate-950 font-black hover:bg-yellow-300 text-xs px-4 py-2 rounded-lg transition shadow-md">🛍️ Tienda de Skins</button>
+                        <button onclick="restartGame()" class="bg-neon-green text-slate-950 font-bold hover:bg-emerald-400 text-xs px-4 py-2 rounded-lg transition">Reiniciar Nivel</button>
+                    </div>
+                </div>
+
+                <!-- Game Canvas Container -->
+                <div class="relative w-full aspect-[16/9] bg-slate-950 rounded-2xl overflow-hidden border border-slate-800 flex items-center justify-center">
+                    <canvas id="gameCanvas" class="w-full h-full block"></canvas>
+
+                    <!-- Main Menu / GameOver / Victory Overlay -->
+                    <div id="game-overlay" class="absolute inset-0 bg-slate-950/90 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center space-y-4 z-20">
+                        <h3 id="overlay-title" class="text-4xl font-black text-neon-cyan">Six Seven World Run</h3>
+                        <p id="overlay-desc" class="text-slate-300 text-sm max-w-md">Controles: Usa A/D o Flechas ⬅️ ➡️ para correr y W, ESPACIO o FLECHA ARRIBA para saltar.</p>
+                        <div class="flex space-x-4">
+                            <button onclick="startGame()" class="bg-gradient-to-r from-neon-green to-neon-cyan text-slate-950 font-black px-8 py-3 rounded-full text-lg shadow-lg hover:scale-105 transition">Comenzar Aventura</button>
+                            <button onclick="openShop()" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-3 rounded-full text-md transition">Ver Skins</button>
+                        </div>
+                    </div>
+
+                    <!-- Shop Overlay -->
+                    <div id="shop-overlay" class="absolute inset-0 bg-slate-950/95 backdrop-blur-md flex flex-col items-center justify-between p-6 z-30 hidden">
+                        <div class="w-full flex justify-between items-center border-b border-slate-800 pb-3">
+                            <h3 class="text-2xl font-black text-yellow-400">🛍️ Tienda de Skins Six Seven</h3>
+                            <div class="text-sm">Tus Estrellas: <span id="shop-stars-count" class="font-bold text-yellow-400 text-lg">0 ⭐</span></div>
+                        </div>
+
+                        <div id="skins-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 w-full my-auto overflow-y-auto max-h-[280px] p-2">
+                            <!-- Skins filled dynamically -->
+                        </div>
+
+                        <button onclick="closeShop()" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-2.5 rounded-full text-sm transition">Cerrar y Volver al Juego</button>
+                    </div>
+                </div>
+
+                <!-- Controls Guide -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 px-2 text-xs text-slate-400 text-center">
+                    <div class="bg-slate-950/50 p-2 rounded-lg border border-slate-800">🎮 <strong>Controles:</strong> Teclas A/D / Flechas + Espacio para saltar</div>
+                    <div class="bg-slate-950/50 p-2 rounded-lg border border-slate-800">🐊 <strong>Bombardiro:</strong> Lanza bombas desde el aire</div>
+                    <div class="bg-slate-950/50 p-2 rounded-lg border border-slate-800">🏁 <strong>Final:</strong> ¡Salta a lo alto de la bandera!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="py-24 px-6 max-w-7xl mx-auto space-y-16">
+        <div class="text-center space-y-4">
+            <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">Ingeniería Absurda del Meme</h2>
+            <p class="text-slate-400 max-w-xl mx-auto">¿Por qué no se detiene nunca? La ciencia aún no lo comprende del todo.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl space-y-4 hover:border-neon-cyan/50 transition">
+                <div class="w-12 h-12 rounded-2xl bg-neon-cyan/10 flex items-center justify-center text-neon-cyan font-black text-xl">🚀</div>
+                <h3 class="text-xl font-bold">Momento Angular Infinito</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Cada impacto convierte la fricción cinética directamente en pura energía de meme, logrando un ciclo de rebote perpetuo.</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl space-y-4 hover:border-neon-pink/50 transition">
+                <div class="w-12 h-12 rounded-2xl bg-neon-pink/10 flex items-center justify-center text-neon-pink font-black text-xl">👁️</div>
+                <h3 class="text-xl font-bold">Núcleo "Six Seven" Sincronizado</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">El patrón impreso de los números "6" y "7" actúa como un amplificador cuántico que rechaza las fuerzas de gravedad tradicionales.</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 p-8 rounded-3xl space-y-4 hover:border-neon-purple/50 transition">
+                <div class="w-12 h-12 rounded-2xl bg-neon-purple/10 flex items-center justify-center text-neon-purple font-black text-xl">🛡️</div>
+                <h3 class="text-xl font-bold">Material Indestructible</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Fabricada con polímeros de internet de alta resistencia. Resiste caídas desde rascacielos y agujeros negros menores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 px-6 bg-slate-900/20 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl lg:text-5xl font-extrabold tracking-tight">Lo que dicen los Expertos en Memes</h2>
+                <p class="text-slate-400">Testimonios 100% reales (o eso nos dijo un tipo en internet).</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl space-y-4">
+                    <p class="text-slate-300 text-sm italic">"Compré la pelota y la tiré por la ventana. Tres días después sigue rebotando en el techo de mi vecino. Increíble servicio."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center font-bold text-sm">MR</div>
+                        <div>
+                            <h4 class="text-sm font-bold">Mariano R.</h4>
+                            <p class="text-xs text-slate-500">Comprador verificado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl space-y-4">
+                    <p class="text-slate-300 text-sm italic">"Intenté atraparla y me devolvió la mirada con desprecio. Ahora vivimos en paz mientras rebota en la esquina de la sala."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-neon-pink to-purple-500 flex items-center justify-center font-bold text-sm">SL</div>
+                        <div>
+                            <h4 class="text-sm font-bold">Sofía L.</h4>
+                            <p class="text-xs text-slate-500">Creadora de contenido</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl space-y-4">
+                    <p class="text-slate-300 text-sm italic">"La física clásica ha muerto. El Six Seven la sepultó bajo un aluvión de rebotes continuos. 10/10."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-neon-cyan to-teal-500 flex items-center justify-center font-bold text-sm text-slate-950">DR</div>
+                        <div>
+                            <h4 class="text-sm font-bold">Dr. Memardo</h4>
+                            <p class="text-xs text-slate-500">Físico Teórico del Shitposting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Section -->
+    <section id="comprar" class="py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border border-slate-800 p-12 rounded-3xl glow-box text-center space-y-8 relative">
+            <div class="absolute -top-12 -right-12 w-48 h-48 bg-neon-pink/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="space-y-4 max-w-xl mx-auto">
+                <span class="bg-neon-cyan/10 text-neon-cyan border border-neon-cyan/20 px-4 py-1.5 rounded-full text-xs font-bold">EDICIÓN LIMITADA MEME</span>
+                <h2 class="text-4xl lg:text-5xl font-black">Consigue tu Six Seven Ball hoy</h2>
+                <p class="text-slate-400 text-sm">Envío interdimensional gratuito a cualquier parte del planeta. Si deja de rebotar, te devolvemos el doble.</p>
+            </div>
+
+            <div class="flex items-baseline justify-center space-x-2">
+                <span class="text-5xl font-black text-white">$67.00</span>
+                <span class="text-slate-500 text-sm line-through">$420.00</span>
+            </div>
+
+            <div class="max-w-sm mx-auto space-y-4">
+                <button onclick="alert('¡Felicidades! Has adquirido la Six Seven Ball.')" class="w-full bg-gradient-to-r from-neon-pink via-purple-600 to-neon-cyan text-white py-4 rounded-full font-bold glow-btn hover:scale-105 transition transform">
+                    Comprar Ahora
+                </button>
+                <p class="text-xs text-slate-500">Garantía de satisfacción del 100% o reembolso en memes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6 max-w-4xl mx-auto space-y-12 border-t border-slate-900">
+        <div class="text-center space-y-4">
+            <h2 class="text-3xl font-bold">Preguntas Frecuentes</h2>
+            <p class="text-slate-400 text-sm">Todo lo que necesitas saber antes de alterar la física de tu hogar.</p>
+        </div>
+
+        <div class="space-y-4">
+            <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center text-slate-200">
+                    ¿De verdad nunca deja de rebotar?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                    Técnicamente sí, a menos que la apagues o cambies de pestaña en el navegador. En la vida real, depende de qué tan duro la lances y de la superficie.
+                </p>
+            </details>
+            <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center text-slate-200">
+                    ¿Qué significa exactamente "Six Seven"?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                    Es una de esas grandes preguntas de la humanidad. Nadie lo sabe con certeza, pero suena increíblemente bien al rebotar.
+                </p>
+            </details>
+            <details class="group bg-slate-900/60 border border-slate-800 rounded-2xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center text-slate-200">
+                    ¿Puedo usarla en exteriores?
+                    <span class="transition group-open:rotate-180">▼</span>
+                </summary>
+                <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                    Sí, pero ten cuidado: si rebota demasiado fuerte podría alcanzar velocidad de escape y salir de la atmósfera terrestre.
+                </p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 text-center text-slate-500 text-xs space-y-4">
+        <div class="flex items-center justify-center space-x-2">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-neon-pink to-neon-cyan flex items-center justify-center font-black text-xs italic text-slate-950">
+                67
+            </div>
+            <span class="font-bold text-slate-300">Six Seven Ball Corporation</span>
+        </div>
+        <p>&copy; 2026 Todos los derechos reservados al meme eterno.</p>
+    </footer>
+
+    <!-- Scripts Section -->
+    <script>
+        /* ----------------------------------------------------
+           1. SIMULADOR PHYSICS CANVAS
+        ---------------------------------------------------- */
+        const canvas = document.getElementById('ballCanvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let bounceCount = 0;
+        let audioEnabled = false;
+        let audioCtx = null;
+
+        let simBall = {
+            x: canvas.width / 2,
+            y: 50,
+            vx: 4,
+            vy: 2,
+            radius: 45
+        };
+
+        const rangeGravity = document.getElementById('range-gravity');
+        const rangeBounce = document.getElementById('range-bounce');
+        const rangeSize = document.getElementById('range-size');
+
+        const valGravity = document.getElementById('val-gravity');
+        const valBounce = document.getElementById('val-bounce');
+        const valSize = document.getElementById('val-size');
+        const bounceCounterEl = document.getElementById('bounce-counter');
+
+        rangeGravity.addEventListener('input', (e) => valGravity.innerText = e.target.value);
+        rangeBounce.addEventListener('input', (e) => valBounce.innerText = e.target.value);
+        rangeSize.addEventListener('input', (e) => {
+            valSize.innerText = e.target.value;
+            simBall.radius = parseInt(e.target.value);
+        });
+
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            simBall.x = e.clientX - rect.left;
+            simBall.y = e.clientY - rect.top;
+            simBall.vx = (Math.random() - 0.5) * 12;
+            simBall.vy = -Math.abs(Math.random() * 10 - 5);
+        });
+
+        function playBounceSound() {
+            if (!audioEnabled) return;
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(300 + Math.random() * 200, audioCtx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(80, audioCtx.currentTime + 0.1);
+                gain.gain.setValueAtTime(0.3, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.1);
+            } catch(e) {}
+        }
+
+        function toggleAudio() {
+            audioEnabled = !audioEnabled;
+            document.getElementById('audio-btn').innerText = audioEnabled ? "🔊 Sonido: ON" : "🔇 Sonido: OFF";
+            if(audioEnabled && !audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+
+        function resetSimulation() {
+            simBall.x = canvas.width / 2;
+            simBall.y = 50;
+            simBall.vx = 4;
+            simBall.vy = 2;
+            bounceCount = 0;
+            bounceCounterEl.innerText = bounceCount;
+        }
+
+        function animateSim() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const gravity = parseFloat(rangeGravity.value);
+            const restitution = parseFloat(rangeBounce.value);
+
+            simBall.vy += gravity;
+            simBall.x += simBall.vx;
+            simBall.y += simBall.vy;
+
+            if (simBall.x + simBall.radius > canvas.width) {
+                simBall.x = canvas.width - simBall.radius;
+                simBall.vx *= -restitution;
+                bounceCount++;
+                bounceCounterEl.innerText = bounceCount;
+                playBounceSound();
+            } else if (simBall.x - simBall.radius < 0) {
+                simBall.x = simBall.radius;
+                simBall.vx *= -restitution;
+                bounceCount++;
+                bounceCounterEl.innerText = bounceCount;
+                playBounceSound();
+            }
+
+            if (simBall.y + simBall.radius > canvas.height) {
+                simBall.y = canvas.height - simBall.radius;
+                simBall.vy *= -restitution;
+                if (Math.abs(simBall.vy) < 1.5) simBall.vy = -6;
+                bounceCount++;
+                bounceCounterEl.innerText = bounceCount;
+                playBounceSound();
+            } else if (simBall.y - simBall.radius < 0) {
+                simBall.y = simBall.radius;
+                simBall.vy *= -restitution;
+                bounceCount++;
+                bounceCounterEl.innerText = bounceCount;
+                playBounceSound();
+            }
+
+            ctx.beginPath();
+            ctx.arc(simBall.x, simBall.y, simBall.radius, 0, Math.PI * 2);
+            let gradient = ctx.createRadialGradient(simBall.x, simBall.y, 5, simBall.x, simBall.y, simBall.radius);
+            gradient.addColorStop(0, '#ff007f');
+            gradient.addColorStop(0.7, '#7928ca');
+            gradient.addColorStop(1, '#00f2fe');
+            ctx.fillStyle = gradient;
+            ctx.shadowColor = '#00f2fe';
+            ctx.shadowBlur = 20;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+
+            ctx.fillStyle = '#ffffff';
+            ctx.font = `bold ${Math.floor(simBall.radius * 0.7)}px Outfit, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText("67", simBall.x, simBall.y);
+
+            requestAnimationFrame(animateSim);
+        }
+        requestAnimationFrame(animateSim);
+
+
+        /* ----------------------------------------------------
+           2. ADVANCED MARIO-STYLE LINEAR PLATFORMER
+        ---------------------------------------------------- */
+        const gCanvas = document.getElementById('gameCanvas');
+        const gCtx = gCanvas.getContext('2d');
+
+        gCanvas.width = 900;
+        gCanvas.height = 500;
+
+        const WORLD_WIDTH = 3600;
+        let gameRunning = false;
+        let cameraX = 0;
+        let totalStarsCollected = 0;
+        let lives = 3;
+
+        // Key states
+        const keys = { left: false, right: false, up: false };
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') keys.left = true;
+            if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') keys.right = true;
+            if (e.key === 'ArrowUp' || e.key === ' ' || e.key === 'w' || e.key === 'W') keys.up = true;
+        });
+
+        window.addEventListener('keyup', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'a' || e.key === 'A') keys.left = false;
+            if (e.key === 'ArrowRight' || e.key === 'd' || e.key === 'D') keys.right = false;
+            if (e.key === 'ArrowUp' || e.key === ' ' || e.key === 'w' || e.key === 'W') keys.up = false;
+        });
+
+        // Skins System (6 Skins)
+        const SKINS = [
+            { id: 'neon', name: 'Clásica Neon', cost: 0, unlocked: true, c1: '#ff007f', c2: '#00f2fe' },
+            { id: 'golden', name: 'Dorado 67', cost: 10, unlocked: false, c1: '#ffe600', c2: '#ff8800' },
+            { id: 'fire', name: 'Fuego Volcánico', cost: 18, unlocked: false, c1: '#ff2200', c2: '#ffcc00' },
+            { id: 'cyber', name: 'Cyberpunk', cost: 25, unlocked: false, c1: '#00ffcc', c2: '#ff00ff' },
+            { id: 'galaxy', name: 'Galáctica', cost: 35, unlocked: false, c1: '#9900ff', c2: '#00ffff' },
+            { id: 'diamond', name: 'Diamante Puro', cost: 50, unlocked: false, c1: '#ffffff', c2: '#70e0ff' }
+        ];
+        let currentSkin = SKINS[0];
+
+        // Player Object
+        const player = {
+            x: 100,
+            y: 350,
+            r: 20,
+            vx: 0,
+            vy: 0,
+            speed: 5.5,
+            jumpPower: -12,
+            grounded: false
+        };
+
+        // Linear Map Platforms (Super Mario Bros style layout)
+        let platforms = [];
+        function initPlatforms() {
+            platforms = [
+                // Ground segments with gaps
+                { x: 0, y: 440, w: 1200, h: 60 },
+                { x: 1300, y: 440, w: 900, h: 60 },
+                { x: 2300, y: 440, w: 1300, h: 60 },
+
+                // Low & High Blocks / Stairs
+                { x: 250, y: 340, w: 120, h: 20 },
+                { x: 450, y: 270, w: 140, h: 20 },
+                { x: 700, y: 320, w: 160, h: 20 },
+                { x: 920, y: 220, w: 120, h: 20 },
+
+                // Gap 1 Overpass
+                { x: 1180, y: 310, w: 140, h: 20 },
+
+                // Mid section platforms
+                { x: 1400, y: 350, w: 100, h: 20 },
+                { x: 1550, y: 260, w: 120, h: 20 },
+                { x: 1720, y: 180, w: 140, h: 20 },
+                { x: 1950, y: 320, w: 180, h: 20 },
+
+                // Gap 2 Overpass Stairs
+                { x: 2180, y: 360, w: 80, h: 20 },
+                { x: 2240, y: 280, w: 100, h: 20 },
+
+                // End Castle Stairs
+                { x: 2800, y: 390, w: 50, h: 50 },
+                { x: 2850, y: 340, w: 50, h: 100 },
+                { x: 2900, y: 290, w: 50, h: 150 },
+                { x: 2950, y: 240, w: 50, h: 200 },
+
+                // Flag Pole Platform & Ground
+                { x: 3300, y: 440, w: 300, h: 60 }
+            ];
+        }
+
+        // Flag Pole Object (End of Game)
+        const flagPole = {
+            x: 3250,
+            y: 120,
+            w: 12,
+            h: 320,
+            flagY: 130,
+            reached: false
+        };
+
+        // Stars Placement (Colectables)
+        let stars = [];
+        function initStars() {
+            stars = [];
+            const starCoords = [
+                {x: 280, y: 300}, {x: 490, y: 230}, {x: 740, y: 280}, {x: 950, y: 180},
+                {x: 1220, y: 260}, {x: 1430, y: 310}, {x: 1600, y: 220}, {x: 1780, y: 130},
+                {x: 2000, y: 270}, {x: 2260, y: 230}, {x: 2500, y: 390}, {x: 2700, y: 390},
+                {x: 2870, y: 290}, {x: 2970, y: 190}, {x: 3150, y: 390}
+            ];
+            starCoords.forEach(c => stars.push({ x: c.x, y: c.y, collected: false }));
+        }
+
+        // Projectiles (Bombardiro Bombs & Niño 67 Beam/Number)
+        let projectiles = [];
+
+        // Advanced Meme Enemies
+        let enemies = [];
+        function initEnemies() {
+            enemies = [
+                // 1. Niño 67 (Walks & Shoots "67" Orbs)
+                {
+                    type: 'kid67', x: 500, y: 400, w: 36, h: 38, vx: 1.2, minX: 350, maxX: 650,
+                    alive: true, shootTimer: 0, shootInterval: 120
+                },
+                {
+                    type: 'kid67', x: 1800, y: 400, w: 36, h: 38, vx: -1.5, minX: 1650, maxX: 1950,
+                    alive: true, shootTimer: 40, shootInterval: 110
+                },
+
+                // 2. Bombardiro Crocodrilo (Flies horizontally & Drops Bombs down)
+                {
+                    type: 'croco', x: 800, y: 120, w: 46, h: 30, vx: 2, minX: 700, maxX: 1300,
+                    alive: true, bombTimer: 0, bombInterval: 90
+                },
+                {
+                    type: 'croco', x: 2100, y: 100, w: 46, h: 30, vx: 2.5, minX: 1900, maxX: 2600,
+                    alive: true, bombTimer: 30, bombInterval: 80
+                },
+
+                // 3. Tung Tung Sahur (Patrols & Swings Baseball Bat)
+                {
+                    type: 'sahur', x: 1450, y: 395, w: 38, h: 45, vx: 1, minX: 1350, maxX: 1600,
+                    alive: true, batAngle: 0, batSwinging: false, batTimer: 0
+                },
+                {
+                    type: 'sahur', x: 2500, y: 395, w: 38, h: 45, vx: -1.2, minX: 2350, maxX: 2700,
+                    alive: true, batAngle: 0, batSwinging: false, batTimer: 0
+                }
+            ];
+        }
+
+        function startGame() {
+            document.getElementById('game-overlay').classList.add('hidden');
+            lives = 3;
+            player.x = 100;
+            player.y = 350;
+            player.vx = 0;
+            player.vy = 0;
+            cameraX = 0;
+            flagPole.reached = false;
+            flagPole.flagY = 130;
+            projectiles = [];
+            
+            initPlatforms();
+            initStars();
+            initEnemies();
+            updateHUD();
+            gameRunning = true;
+        }
+
+        function restartGame() {
+            startGame();
+        }
+
+        function updateHUD() {
+            document.getElementById('game-stars').innerText = `${totalStarsCollected} ⭐`;
+            document.getElementById('game-lives').innerText = `❤️ ${lives}`;
+            document.getElementById('game-active-skin').innerText = currentSkin.name;
+            document.getElementById('shop-stars-count').innerText = `${totalStarsCollected} ⭐`;
+        }
+
+        function gameOver(win) {
+            gameRunning = false;
+            const overlay = document.getElementById('game-overlay');
+            const title = document.getElementById('overlay-title');
+            const desc = document.getElementById('overlay-desc');
+
+            overlay.classList.remove('hidden');
+            if (win) {
+                title.innerText = "¡NIVEL COMPLETADO! 🚩🎉";
+                title.className = "text-4xl font-black text-neon-green";
+                desc.innerText = `¡Llegaste a la cima de la bandera! Llevas ${totalStarsCollected} estrellas colectadas. ¡Entra a la tienda para equipar skins!`;
+            } else {
+                title.innerText = "¡HAS CAÍDO! 💀";
+                title.className = "text-4xl font-black text-neon-pink";
+                desc.innerText = "Los memes de Six Seven vencieron a la pelota esta vez. ¡Inténtalo de nuevo!";
+            }
+        }
+
+        // Shop Interface Logic
+        function openShop() {
+            updateHUD();
+            renderShopSkins();
+            document.getElementById('shop-overlay').classList.remove('hidden');
+        }
+
+        function closeShop() {
+            document.getElementById('shop-overlay').classList.add('hidden');
+        }
+
+        function renderShopSkins() {
+            const grid = document.getElementById('skins-grid');
+            grid.innerHTML = '';
+
+            SKINS.forEach(skin => {
+                const card = document.createElement('div');
+                const isEquipped = currentSkin.id === skin.id;
+
+                card.className = `p-3 rounded-2xl border flex flex-col items-center justify-between text-center transition ${
+                    isEquipped ? 'border-neon-cyan bg-slate-900/90 glow-box' : 'border-slate-800 bg-slate-950/80'
+                }`;
+
+                card.innerHTML = `
+                    <div class="w-12 h-12 rounded-full my-1 flex items-center justify-center font-black text-xs text-white"
+                         style="background: radial-gradient(circle, ${skin.c1}, ${skin.c2}); box-shadow: 0 0 15px ${skin.c1}">
+                        67
+                    </div>
+                    <div class="font-bold text-xs mt-1">${skin.name}</div>
+                    <div class="text-[10px] text-slate-400 mb-2">${skin.unlocked ? 'Desbloqueada' : skin.cost + ' ⭐'}</div>
+                    ${
+                        isEquipped 
+                        ? `<span class="bg-neon-cyan/20 text-neon-cyan text-[10px] font-bold px-3 py-1 rounded-full">Equipado</span>`
+                        : skin.unlocked 
+                        ? `<button onclick="equipSkin('${skin.id}')" class="bg-slate-800 hover:bg-slate-700 text-white text-[10px] font-bold px-3 py-1 rounded-full">Equipar</button>`
+                        : `<button onclick="buySkin('${skin.id}')" class="bg-neon-yellow text-slate-950 hover:bg-yellow-300 text-[10px] font-black px-3 py-1 rounded-full">Comprar</button>`
+                    }
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function buySkin(id) {
+            const skin = SKINS.find(s => s.id === id);
+            if (skin && !skin.unlocked) {
+                if (totalStarsCollected >= skin.cost) {
+                    totalStarsCollected -= skin.cost;
+                    skin.unlocked = true;
+                    currentSkin = skin;
+                    updateHUD();
+                    renderShopSkins();
+                } else {
+                    alert('¡No tienes suficientes estrellas! Completa el nivel para juntar más.');
+                }
+            }
+        }
+
+        function equipSkin(id) {
+            const skin = SKINS.find(s => s.id === id);
+            if (skin && skin.unlocked) {
+                currentSkin = skin;
+                updateHUD();
+                renderShopSkins();
+            }
+        }
+
+        /* Game Update Logic */
+        function gameUpdate() {
+            if (!gameRunning) return;
+
+            // Player Horizontal Controls
+            if (keys.left) player.vx = -player.speed;
+            else if (keys.right) player.vx = player.speed;
+            else player.vx *= 0.8;
+
+            // Jump
+            if (keys.up && player.grounded) {
+                player.vy = player.jumpPower;
+                player.grounded = false;
+            }
+
+            player.vy += 0.55; // Gravity
+            player.x += player.vx;
+            player.y += player.vy;
+
+            // Keep within world start
+            if (player.x - player.r < 0) player.x = player.r;
+
+            // Camera follow player smoothly
+            cameraX = player.x - 250;
+            if (cameraX < 0) cameraX = 0;
+            if (cameraX > WORLD_WIDTH - gCanvas.width) cameraX = WORLD_WIDTH - gCanvas.width;
+
+            // Platform Collision Detection
+            player.grounded = false;
+            platforms.forEach(p => {
+                if (player.x + player.r > p.x &&
+                    player.x - player.r < p.x + p.w &&
+                    player.y + player.r >= p.y &&
+                    player.y + player.r <= p.y + p.h + player.vy) {
+                    
+                    if (player.vy > 0) {
+                        player.y = p.y - player.r;
+                        player.vy = 0;
+                        player.grounded = true;
+                    }
+                }
+            });
+
+            // Fall into pits
+            if (player.y > gCanvas.height + 100) {
+                lives--;
+                updateHUD();
+                if (lives <= 0) {
+                    gameOver(false);
+                } else {
+                    player.x = Math.max(100, player.x - 300);
+                    player.y = 200;
+                    player.vx = 0;
+                    player.vy = 0;
+                }
+            }
+
+            // Star Collection
+            stars.forEach(s => {
+                if (!s.collected) {
+                    const dist = Math.hypot(player.x - s.x, player.y - s.y);
+                    if (dist < player.r + 14) {
+                        s.collected = true;
+                        totalStarsCollected++;
+                        updateHUD();
+                    }
+                }
+            });
+
+            // Flag Pole Interaction (End Goal)
+            if (!flagPole.reached && player.x + player.r >= flagPole.x) {
+                flagPole.reached = true;
+                player.vx = 0;
+            }
+
+            if (flagPole.reached) {
+                if (flagPole.flagY < 380) flagPole.flagY += 3;
+                player.y += 2;
+                if (player.y > 380) {
+                    gameOver(true);
+                }
+                return;
+            }
+
+            // Projectiles Update
+            for (let i = projectiles.length - 1; i >= 0; i--) {
+                const proj = projectiles[i];
+                proj.x += proj.vx;
+                proj.y += proj.vy;
+
+                // Hit Player
+                const pDist = Math.hypot(player.x - proj.x, player.y - proj.y);
+                if (pDist < player.r + proj.r) {
+                    projectiles.splice(i, 1);
+                    lives--;
+                    updateHUD();
+                    if (lives <= 0) gameOver(false);
+                    continue;
+                }
+
+                // Remove out of bounds / floor hit
+                if (proj.y > 440 || proj.x < cameraX - 100 || proj.x > cameraX + gCanvas.width + 100) {
+                    projectiles.splice(i, 1);
+                }
+            }
+
+            // Enemy AI & Attacks
+            enemies.forEach(e => {
+                if (!e.alive) return;
+
+                // Movement
+                e.x += e.vx;
+                if (e.x < e.minX || e.x + e.w > e.maxX) e.vx *= -1;
+
+                // 1. Niño 67 Attack (Shoots 67 Energy Balls)
+                if (e.type === 'kid67') {
+                    e.shootTimer++;
+                    if (e.shootTimer >= e.shootInterval) {
+                        e.shootTimer = 0;
+                        const dir = player.x < e.x ? -1 : 1;
+                        projectiles.push({
+                            x: e.x + e.w/2, y: e.y + e.h/2, vx: dir * 3.5, vy: 0, r: 8, type: '67beam'
+                        });
+                    }
+                }
+
+                // 2. Bombardiro Crocodrilo Attack (Drops Flying Bombs)
+                if (e.type === 'croco') {
+                    e.bombTimer++;
+                    if (e.bombTimer >= e.bombInterval) {
+                        e.bombTimer = 0;
+                        projectiles.push({
+                            x: e.x + e.w/2, y: e.y + e.h, vx: 0, vy: 3, r: 10, type: 'bomb'
+                        });
+                    }
+                }
+
+                // 3. Tung Tung Sahur Attack (Swings Baseball Bat when player is near)
+                if (e.type === 'sahur') {
+                    const distToPlayer = Math.abs(player.x - (e.x + e.w/2));
+                    if (distToPlayer < 80) {
+                        e.batSwinging = true;
+                        e.batAngle = Math.sin(Date.now() / 80) * 1.2;
+                    } else {
+                        e.batSwinging = false;
+                        e.batAngle = 0;
+                    }
+                }
+
+                // Collision Player vs Enemy
+                if (player.x + player.r > e.x &&
+                    player.x - player.r < e.x + e.w &&
+                    player.y + player.r > e.y &&
+                    player.y - player.r < e.y + e.h) {
+
+                    // Jump on enemy top to defeat
+                    if (player.vy > 0 && player.y < e.y + 12) {
+                        e.alive = false;
+                        player.vy = -9; // Bounce up
+                        totalStarsCollected += 2; // Bonus stars
+                        updateHUD();
+                    } else {
+                        // Player takes damage
+                        lives--;
+                        updateHUD();
+                        player.x = Math.max(100, player.x - 150);
+                        player.y = 250;
+                        player.vx = 0;
+                        player.vy = 0;
+                        if (lives <= 0) gameOver(false);
+                    }
+                }
+            });
+        }
+
+        /* Render Game Canvas */
+        function gameRender() {
+            gCtx.clearRect(0, 0, gCanvas.width, gCanvas.height);
+
+            // Draw Parallax Sky Background
+            let bgGradient = gCtx.createLinearGradient(0, 0, 0, gCanvas.height);
+            bgGradient.addColorStop(0, '#0f172a');
+            bgGradient.addColorStop(1, '#020617');
+            gCtx.fillStyle = bgGradient;
+            gCtx.fillRect(0, 0, gCanvas.width, gCanvas.height);
+
+            gCtx.save();
+            gCtx.translate(-cameraX, 0); // Camera Offset
+
+            // Draw Platforms
+            platforms.forEach(p => {
+                gCtx.fillStyle = '#1e293b';
+                gCtx.fillRect(p.x, p.y, p.w, p.h);
+                gCtx.fillStyle = '#00f2fe';
+                gCtx.fillRect(p.x, p.y, p.w, 4); // Neon Top Border
+            });
+
+            // Draw Flag Pole (End)
+            gCtx.fillStyle = '#cbd5e1';
+            gCtx.fillRect(flagPole.x, flagPole.y, flagPole.w, flagPole.h); // Pole
+            gCtx.fillStyle = '#facc15';
+            gCtx.beginPath();
+            gCtx.arc(flagPole.x + 6, flagPole.y, 12, 0, Math.PI * 2); // Gold orb on top
+            gCtx.fill();
+
+            // Flag
+            gCtx.fillStyle = '#ff007f';
+            gCtx.beginPath();
+            gCtx.moveTo(flagPole.x + 12, flagPole.flagY);
+            gCtx.lineTo(flagPole.x + 60, flagPole.flagY + 20);
+            gCtx.lineTo(flagPole.x + 12, flagPole.flagY + 40);
+            gCtx.closePath();
+            gCtx.fill();
+
+            // Draw Stars
+            stars.forEach(s => {
+                if (!s.collected) {
+                    gCtx.fillStyle = '#facc15';
+                    gCtx.font = '18px sans-serif';
+                    gCtx.textAlign = 'center';
+                    gCtx.textBaseline = 'middle';
+                    gCtx.fillText('⭐', s.x, s.y);
+                }
+            });
+
+            // Draw Projectiles
+            projectiles.forEach(pr => {
+                if (pr.type === 'bomb') {
+                    gCtx.fillStyle = '#ff3300';
+                    gCtx.beginPath();
+                    gCtx.arc(pr.x, pr.y, pr.r, 0, Math.PI * 2);
+                    gCtx.fill();
+                    gCtx.fillStyle = '#ffff00';
+                    gCtx.font = '10px sans-serif';
+                    gCtx.fillText('💣', pr.x - 5, pr.y + 3);
+                } else if (pr.type === '67beam') {
+                    gCtx.fillStyle = '#00f2fe';
+                    gCtx.beginPath();
+                    gCtx.arc(pr.x, pr.y, pr.r, 0, Math.PI * 2);
+                    gCtx.fill();
+                    gCtx.fillStyle = '#000';
+                    gCtx.font = 'bold 9px sans-serif';
+                    gCtx.fillText('67', pr.x - 5, pr.y + 3);
+                }
+            });
+
+            // Draw Enemies (Modeled 2D Canvas Sprites)
+            enemies.forEach(e => {
+                if (!e.alive) return;
+
+                // 1. Niño 67
+                if (e.type === 'kid67') {
+                    // Head & Body
+                    gCtx.fillStyle = '#ffdfbf';
+                    gCtx.beginPath();
+                    gCtx.arc(e.x + 18, e.y + 14, 12, 0, Math.PI * 2);
+                    gCtx.fill();
+
+                    gCtx.fillStyle = '#ff007f';
+                    gCtx.fillRect(e.x + 8, e.y + 24, 20, 14); // Shirt
+
+                    // Text 67 on Shirt
+                    gCtx.fillStyle = '#ffffff';
+                    gCtx.font = 'bold 9px Outfit';
+                    gCtx.fillText('67', e.x + 12, e.y + 34);
+                }
+
+                // 2. Bombardiro Crocodrilo
+                if (e.type === 'croco') {
+                    gCtx.fillStyle = '#10b981';
+                    gCtx.beginPath();
+                    gCtx.ellipse(e.x + 23, e.y + 15, 22, 12, 0, 0, Math.PI * 2); // Body
+                    gCtx.fill();
+
+                    // Snout
+                    gCtx.fillRect(e.x - 4, e.y + 10, 14, 10);
+                    // Wings
+                    gCtx.fillStyle = '#6ee7b7';
+                    gCtx.beginPath();
+                    gCtx.moveTo(e.x + 20, e.y + 5);
+                    gCtx.lineTo(e.x + 30, e.y - 10);
+                    gCtx.lineTo(e.x + 35, e.y + 5);
+                    gCtx.fill();
+                }
+
+                // 3. Tung Tung Sahur
+                if (e.type === 'sahur') {
+                    // Stone Head / Body
+                    gCtx.fillStyle = '#64748b';
+                    gCtx.fillRect(e.x + 6, e.y + 4, 26, 38);
+
+                    // Eyes
+                    gCtx.fillStyle = '#ffcc00';
+                    gCtx.fillRect(e.x + 10, e.y + 12, 5, 5);
+                    gCtx.fillRect(e.x + 23, e.y + 12, 5, 5);
+
+                    // Baseball Bat
+                    gCtx.save();
+                    gCtx.translate(e.x + 30, e.y + 20);
+                    gCtx.rotate(e.batAngle);
+                    gCtx.fillStyle = '#b45309';
+                    gCtx.fillRect(0, -4, 24, 8); // Bat shape
+                    gCtx.restore();
+                }
+            });
+
+            // Draw Player with Selected Skin
+            gCtx.beginPath();
+            gCtx.arc(player.x, player.y, player.r, 0, Math.PI * 2);
+            let pGradient = gCtx.createRadialGradient(player.x, player.y, 2, player.x, player.y, player.r);
+            pGradient.addColorStop(0, currentSkin.c1);
+            pGradient.addColorStop(1, currentSkin.c2);
+            gCtx.fillStyle = pGradient;
+            gCtx.shadowColor = currentSkin.c1;
+            gCtx.shadowBlur = 15;
+            gCtx.fill();
+            gCtx.shadowBlur = 0;
+
+            // Player Text "67"
+            gCtx.fillStyle = '#ffffff';
+            gCtx.font = 'bold 13px Outfit, sans-serif';
+            gCtx.textAlign = 'center';
+            gCtx.textBaseline = 'middle';
+            gCtx.fillText('67', player.x, player.y);
+
+            gCtx.restore(); // Restore camera translation
+        }
+
+        function gameLoop() {
+            gameUpdate();
+            gameRender();
+            requestAnimationFrame(gameLoop);
+        }
+        requestAnimationFrame(gameLoop);
+    </script>
+</body>
+</html>
